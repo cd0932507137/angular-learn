@@ -17,3 +17,8 @@
 {{ greeting }}
 <br>
 <button (click)="greeting='我是美女'">點擊我會出現美女</button>
+
+<br>
+<!-- Template Reference Variables -->
+<input #myInput type="text">
+<button (click)="logMsg(myInput.value)">點擊我會有console.log</button>

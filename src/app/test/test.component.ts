@@ -32,4 +32,8 @@ export class TestComponent implements OnInit {
     this.greeting = "Hello Josh!!~~"
   }
 
+  //Template Reference Variables
+  logMsg(value) {
+    console.log(value);
+  }
 }
