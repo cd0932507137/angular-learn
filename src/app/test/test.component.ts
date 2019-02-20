@@ -10,6 +10,11 @@ export class TestComponent implements OnInit {
   public name = "Tim";
   public text = "Hello World";
   public siteUrl = window.location.href;
+
+  //Property Binding
+  public myId = "testId";
+  public isDisabled = false;
+
   constructor() { }
 
   ngOnInit() {

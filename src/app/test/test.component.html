@@ -6,3 +6,7 @@
 <h2>{{ text.length }}</h2>
 <h1>{{ getUser() }}</h1>
 <h1>{{ siteUrl }}</h1>
+
+<!-- Property Binding -->
+<input [id]="myId" type="text" value="test">
+<input bind-disabled="isDisabled" id="{{myId}}" type="text" value="test">
