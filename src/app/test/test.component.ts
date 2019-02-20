@@ -15,6 +15,8 @@ export class TestComponent implements OnInit {
   public myId = "testId";
   public isDisabled = false;
 
+  public greeting = "";
+
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +24,12 @@ export class TestComponent implements OnInit {
 
   getUser() {
     return "Hi Hi " + this.name;
+  }
+
+  //Event Binding
+  onClick() {
+    console.log('tag123');
+    this.greeting = "Hello Josh!!~~"
   }
 
 }

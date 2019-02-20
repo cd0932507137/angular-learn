@@ -10,3 +10,10 @@
 <!-- Property Binding -->
 <input [id]="myId" type="text" value="test">
 <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="test">
+
+<br>
+<!-- Event Binding -->
+<button (click)="onClick()">點擊我</button>
+{{ greeting }}
+<br>
+<button (click)="greeting='我是美女'">點擊我會出現美女</button>
