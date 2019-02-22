@@ -32,3 +32,12 @@
 <!-- ngIf -->
 <br>
 <h2 *ngIf="display">因為是false所以不會顯示</h2>
+
+<!-- ngSwitch -->
+<br>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">color is red</div>
+  <div *ngSwitchCase="'blue'">color is blue</div>
+  <div *ngSwitchCase="'yellow'">color is yellow</div>
+  <div *ngSwitchDefault>default</div>
+</div>

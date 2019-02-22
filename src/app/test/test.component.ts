@@ -23,6 +23,9 @@ export class TestComponent implements OnInit {
   //ng-if
   public display = false;
 
+  //ngSwitch
+  public color = "red";
+
   constructor() { }
 
   ngOnInit() {
