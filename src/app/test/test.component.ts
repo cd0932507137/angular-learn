@@ -17,6 +17,9 @@ export class TestComponent implements OnInit {
 
   public greeting = "";
 
+  //Two-way Binding
+  public twoWay = "";
+
   constructor() { }
 
   ngOnInit() {

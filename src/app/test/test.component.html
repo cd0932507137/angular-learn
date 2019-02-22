@@ -22,3 +22,9 @@
 <!-- Template Reference Variables -->
 <input #myInput type="text">
 <button (click)="logMsg(myInput.value)">點擊我會有console.log</button>
+
+<br>
+<!-- Two-way Binding -->
+<label for="twoWay">雙向綁定：</label>
+<input type="text" [(ngModel)]="twoWay">
+{{ twoWay }}
