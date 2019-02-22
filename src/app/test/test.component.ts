@@ -20,6 +20,9 @@ export class TestComponent implements OnInit {
   //Two-way Binding
   public twoWay = "";
 
+  //ng-if
+  public display = false;
+
   constructor() { }
 
   ngOnInit() {
