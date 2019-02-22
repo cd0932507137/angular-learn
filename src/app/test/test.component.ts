@@ -26,6 +26,9 @@ export class TestComponent implements OnInit {
   //ngSwitch
   public color = "red";
 
+  //ngFor
+  public phoneName = ['Apple', 'LG', 'Samsung', 'Google'];
+
   constructor() { }
 
   ngOnInit() {

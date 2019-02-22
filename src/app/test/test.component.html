@@ -41,3 +41,9 @@
   <div *ngSwitchCase="'yellow'">color is yellow</div>
   <div *ngSwitchDefault>default</div>
 </div>
+
+<!-- ngFor -->
+<br>
+<div *ngFor="let phone of phoneName; index as i">
+  <h1>編號{{ i }}.{{ phone }}</h1>
+</div>
