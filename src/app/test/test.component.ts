@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee/employee.service';
 
 @Component({
   selector: 'app-test',
@@ -29,9 +30,13 @@ export class TestComponent implements OnInit {
   //ngFor
   public phoneName = ['Apple', 'LG', 'Samsung', 'Google'];
 
-  constructor() { }
+  public employee = [];
+  constructor(
+    private employeeService: EmployeeService
+  ) { }
 
   ngOnInit() {
+    this.employee = this.employeeService.getEmployee();
   }
 
   getUser() {
