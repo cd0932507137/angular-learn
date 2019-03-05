@@ -30,13 +30,14 @@ export class TestComponent implements OnInit {
   //ngFor
   public phoneName = ['Apple', 'LG', 'Samsung', 'Google'];
 
-  public employee = [];
+  public employee: any;
   constructor(
     private employeeService: EmployeeService
   ) { }
 
   ngOnInit() {
-    this.employee = this.employeeService.getEmployee();
+    this.employeeService.getEmployee()
+    .subscribe(data => this.employee = data);
   }
 
   getUser() {
