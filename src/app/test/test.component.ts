@@ -31,13 +31,15 @@ export class TestComponent implements OnInit {
   public phoneName = ['Apple', 'LG', 'Samsung', 'Google'];
 
   public employee: any;
+  public errorMsg;
   constructor(
     private employeeService: EmployeeService
   ) { }
 
   ngOnInit() {
     this.employeeService.getEmployee()
-    .subscribe(data => this.employee = data);
+    .subscribe(data => this.employee = data,
+      error => this.errorMsg = error);
   }
 
   getUser() {
